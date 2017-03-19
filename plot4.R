@@ -24,18 +24,4 @@ HPC$Date <- as.Date(HPC$Date,"%d/%m/%Y")
 HPC <- subset(HPC, HPC$Date >= "2007-02-01" & HPC$Date <= "2007-02-02")
 
 
-# create Plot 1
-hist(HPC$Global_active_power, main = "Global Active Power", col = "red", xlab = "Global Active Power (kilowatts)")
-
-
-#create Plot 2
-plot( HPC$Time, HPC$Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
-
-
-#create Plot 3
-plot( HPC$Time, HPC$Sub_metering_1, type="l", ylab = "Energy sub metering", xlab = "", col = "black")
-points(HPC$Time,HPC$Sub_metering_2,col = "red",type = "l")
-points(HPC$Time,HPC$Sub_metering_3,col = "blue",type = "l")
-
-
-
+# create Plot 4
